@@ -16,9 +16,7 @@ public class SeleccionProductosStepDefinition {
     @When("^el usuario agrega tres productos al carrito$")
     public void elUsuarioAgregaTresProductosAlCarrito() {
 
-        for (int i = 1; i < 4; i++) {
-            OnStage.theActorInTheSpotlight().attemptsTo(SeleccionProductoTask.seleccionarProducto(i));
-        }
+            OnStage.theActorInTheSpotlight().attemptsTo(SeleccionProductoTask.seleccionarProducto());
 
     }
 

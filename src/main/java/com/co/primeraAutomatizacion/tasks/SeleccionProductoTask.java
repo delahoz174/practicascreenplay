@@ -18,45 +18,41 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleccionProductoTask implements Task {
 
-    private final int productoNum;
-
-    public SeleccionProductoTask(int productoNum) {
-        this.productoNum = productoNum;
-    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_HOME));
 
 
-       switch (this.productoNum) {
-           case 1:
-               actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_1));
-               break;
+        for (int i = 1; i < 4; i++) {
+            actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_HOME));
+            switch (i) {
+                case 1:
+                    actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_1));
+                    break;
 
-           case 2:
-               actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_2));
-               break;
+                case 2:
+                    actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_2));
+                    break;
 
-           case 3:
-                actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_3));
-                break;
-       }
+                case 3:
+                    actor.attemptsTo(Click.on(SeleccionProductosPage.URL_PRODUCTO_3));
+                    break;
+            }
 
-        actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_AGREGARPRODUCTO));
-        WebDriverWait wait = new WebDriverWait(BrowseTheWeb.as(actor).getDriver(), 5);
-        Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-        alert.accept();
+            actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_AGREGARPRODUCTO));
+            WebDriverWait wait = new WebDriverWait(BrowseTheWeb.as(actor).getDriver(), 5);
+            Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+            alert.accept();
 
-       if(this.productoNum==3){
-           actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_CART));
-           actor.attemptsTo(WaitElement.elementIsVisible(SeleccionProductosPage.COMPARE,10));
-       }
+            if (i == 3) {
+                actor.attemptsTo(Click.on(SeleccionProductosPage.BTN_CART));
+                actor.attemptsTo(WaitElement.elementIsVisible(SeleccionProductosPage.COMPARE, 10));
+            }
 
+        }
     }
 
-    public static SeleccionProductoTask seleccionarProducto(int productoNum) {
-        return Tasks.instrumented(SeleccionProductoTask.class, productoNum);
+    public static SeleccionProductoTask seleccionarProducto() {
+        return Tasks.instrumented(SeleccionProductoTask.class);
     }
 }
 
