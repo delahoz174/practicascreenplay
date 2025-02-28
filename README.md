@@ -17,7 +17,7 @@ Para ejecutar el proyecto, debe de tener instalados los siguientes componentes:
 
 #  Instalación
 Clonar el repositorio con Git
-Ejecuta el siguiente comando en la terminal:
+- Ejecutar el siguiente comando en la terminal:
 git clone https://github.com/delahoz174/practicascreenplay.git
 
 Descarga Manual (ZIP):
