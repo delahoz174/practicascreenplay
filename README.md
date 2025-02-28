@@ -10,10 +10,10 @@ Para ejecutar el proyecto, debe de tener instalados los siguientes componentes:
 - Gradle 8.4
   
 # Tecnologías Utilizadas
-Serenity BDD: Framework de automatización de pruebas.
-Screenplay: Modelo de diseño para pruebas estructuradas y reutilizables.
-Gradle: Herramienta de construcción y gestión de dependencias.
-JUnit: Framework de pruebas unitarias.
+- Serenity BDD: Framework de automatización de pruebas.
+- Screenplay: Modelo de diseño para pruebas estructuradas y reutilizables.
+- Gradle: Herramienta de construcción y gestión de dependencias.
+- JUnit: Framework de pruebas unitarias.
 
 #  Instalación
 Clonar el repositorio con Git
