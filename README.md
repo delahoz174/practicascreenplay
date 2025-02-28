@@ -3,11 +3,17 @@
 Este proyecto automatiza el proceso de inicio de sesión, selección de tres productos y verificación del total de la compra, asegurando que la suma de los productos sea correcta.
 
 # Requisitos Previos
-Para ejecutar el proyecto, asegúrate de tener instalados los siguientes componentes:
+Para ejecutar el proyecto, debe de tener instalados los siguientes componentes:
 
-IntelliJ IDEA (o cualquier otro IDE compatible con Java)
-JDK 11
-Gradle 8.4
+- IntelliJ IDEA (o cualquier otro IDE compatible con Java)
+- JDK 11
+- Gradle 8.4
+  
+# Tecnologías Utilizadas
+Serenity BDD: Framework de automatización de pruebas.
+Screenplay: Modelo de diseño para pruebas estructuradas y reutilizables.
+Gradle: Herramienta de construcción y gestión de dependencias.
+JUnit: Framework de pruebas unitarias.
 
 #  Instalación
 Clonar el repositorio con Git
