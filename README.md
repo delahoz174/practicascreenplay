@@ -1,6 +1,7 @@
 # practicascreenplay
 # Descripción
 Este proyecto automatiza el proceso de inicio de sesión, selección de tres productos y verificación del total de la compra, asegurando que la suma de los productos sea correcta.
+
 #Requisitos Previos
 Para ejecutar el proyecto, asegúrate de tener instalados los siguientes componentes:
 
