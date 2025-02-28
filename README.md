@@ -32,4 +32,4 @@ Ejecutar pruebas desde IntelliJ:
 - Haz clic derecho sobre la clase y selecciona Run 'PrincipalRunner'.
   
 Ejecutar pruebas desde la consola:
-Abre una terminal en la raíz del proyecto y ejecuta: gradle test --tests PrincipalRunner
+- Abre una terminal en la raíz del proyecto y ejecuta: gradle test --tests PrincipalRunner
